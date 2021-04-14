@@ -8,7 +8,8 @@ import { SharedModule } from '../shared/shared.module';
 import { AppRoutingModule } from '../app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { ComponentsModule } from '../components/components.module';
-import { ChartsModule } from 'ng2-charts';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
+//import { ChartsModule } from 'ng2-charts';
 
 
 
@@ -17,13 +18,15 @@ import { ChartsModule } from 'ng2-charts';
     DashboardComponent,
     ProgressComponent,
     Grafica1Component,
-    PagesComponent
+    PagesComponent,
+    AccountSettingsComponent
   ],
   exports: [
     DashboardComponent,
     ProgressComponent,
     Grafica1Component,
-    PagesComponent
+    PagesComponent,
+    AccountSettingsComponent
   ],
   imports: [
     CommonModule,
@@ -31,7 +34,7 @@ import { ChartsModule } from 'ng2-charts';
     AppRoutingModule,
     FormsModule,
     ComponentsModule,
-    ChartsModule
+    //ChartsModule
   ]
 })
 export class PagesModule { }
